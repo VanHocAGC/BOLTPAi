@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:#060606;
+    background-color:#161616;
     color:#f6f6f6;
     font-family: Roboto,Poppins;
 }
@@ -20,6 +20,8 @@ a:hover{
     padding:0;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    top: 0px;
 }
 .header{
     width: 100%;
@@ -47,4 +49,62 @@ a:hover{
 .navbar-nav li:hover{
     transform: translateY(-5px);
     transition: transform 0.5s;
+}
+/* intro */
+.intro{
+    margin-top: 80px;
+}
+.intro-box{
+    position: relative;
+    height:100vh;
+    width: 100%;
+}
+.intro-content{
+    position:absolute;
+    z-index: 999;
+    height: auto;
+    width: 44%;
+    top:25%;
+    left:10%;
+    background-color: rgba(255,255, 255,0);
+}
+.intro-title h1{
+    font-weight: 900;
+    line-height: 130%;
+    background-color: rgba(255,255, 255,0);
+}
+.intro-title{
+    padding-bottom: 20px;
+    background-color: rgba(255,255, 255,0);
+}
+.intro-content h5{
+    color:#ccc;
+    line-height:35px;
+    padding-bottom: 30px;
+}
+.intro-content button{
+    border:none;
+    padding:12px 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius:25px;
+    font-weight: 700;
+}
+.intro-image{
+    position: absolute;
+    height:auto;
+    width: 60%;
+    right: 5%;
+    top: 30px;
+}
+.frame{
+    width: 90%;
+    overflow: hidden;
+    height: 500px;
+    margin:5%;
+}
+.frame img{
+    height:100%;
+    object-fit: cover;
+   
 }
