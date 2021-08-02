@@ -2,9 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto,Poppins;
+}
+body{
     background-color:#161616;
     color:#f6f6f6;
-    font-family: Roboto,Poppins;
 }
 li{
     list-style-type: none;
@@ -25,7 +27,7 @@ a:hover{
 }
 .header{
     width: 100%;
-    margin: 0px 20px;  
+    background-color:#161616;
 }
 .navbar-nav li{
     padding: 10px 15px;
@@ -53,6 +55,7 @@ a:hover{
 /* intro */
 .intro{
     margin-top: 80px;
+    padding-bottom: 180px;;
 }
 .intro-box{
     position: relative;
@@ -67,11 +70,13 @@ a:hover{
     top:25%;
     left:10%;
     background-color: rgba(255,255, 255,0);
+
 }
 .intro-title h1{
     font-weight: 900;
     line-height: 130%;
     background-color: rgba(255,255, 255,0);
+    z-index: 100;
 }
 .intro-title{
     padding-bottom: 20px;
@@ -107,4 +112,42 @@ a:hover{
     height:100%;
     object-fit: cover;
    
+}
+/* about */
+.about{
+    position: absolute;
+    z-index: 2;
+    width: 75%;
+    bottom:-570px;
+}
+.about-box{
+    height:auto;
+    width:100%;
+    background-color:#00372D;
+    height:500px;
+    display: flex;
+    justify-content: center;
+}
+.about-content{
+    margin-top:8%;
+    height:auto;
+    width:85%;
+}
+.about-content h3{
+    font-weight: 700;
+    padding:20px 0px;
+}
+.about-item{
+    display: flex;
+    margin-top: 20px;
+}
+.about-item p{
+    line-height: 30px;
+    color: #bbb;
+}
+
+
+.technology-box{
+    height:1000px;
+    background-color:#060606;
 }
