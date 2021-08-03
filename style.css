@@ -18,6 +18,9 @@ a {
 a:hover {
   color: #fff;
 }
+section {
+  background-color: #060606;
+}
 .navbar-box {
   padding: 0;
   position: fixed;
@@ -204,22 +207,55 @@ a:hover {
 .tech-button {
   display: flex;
   text-transform: uppercase;
-  margin-top:20px;
+  margin-top: 20px;
 }
-.tech-button p{
+.tech-button p {
   font-size: 0.8rem;
   letter-spacing: 2px;
-  margin:auto 30px auto 0px;
+  margin: auto 30px auto 0px;
 }
-.tech-button div{
+.tech-button div {
   display: flex;
   border: solid 1px #ddd;
-  border-radius:50%;
+  border-radius: 50%;
   justify-content: center;
-  height:40px;
-  width:40px;
-  align-items:center;
+  height: 40px;
+  width: 40px;
+  align-items: center;
 }
-.tech-button i{
+.tech-button i {
   color: #aaa;
+}
+/* partner */
+.partner {
+  padding-top: 200px;
+  width: 100%;
+}
+.partner-box {
+  background-color: #161616;
+  width: 92%;
+  margin-left: 8%;
+}
+.partner-box h2 {
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
+}
+.partner-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin-left: 80px;
+}
+.partner-content div {
+  height: auto;
+  margin: 40px;
+}
+.partner-content div img {
+  width: 100%;
+  object-fit: contain;
+  height: 80px;
 }
