@@ -259,3 +259,51 @@ section {
   object-fit: contain;
   height: 80px;
 }
+/* team */
+.team{
+  padding: 120px 0px 0px 7%;
+
+}
+.team-box{
+  display:flex;
+}
+.team-box h3{
+  margin-top:40px;
+  text-transform: uppercase;
+  font-weight:600;
+  letter-spacing:3px;
+}
+.team-persons{
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-item{
+  margin: 20px;
+  text-align: center;
+}
+.team-face{
+  height:185px;
+  width:185px;
+  border-radius:50%;
+  overflow: hidden;
+  background-color:violet;
+  margin:auto;
+}
+.team-face img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+.team-infor{
+  text-align: center;
+}
+.team-infor h5{
+  margin: 30px 0px 15px 0px;
+}
+.team-infor p{
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing:3px;
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+}
