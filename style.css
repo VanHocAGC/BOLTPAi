@@ -307,3 +307,85 @@ section {
   font-size: 0.7rem;
   margin-bottom: 30px;
 }
+/* explore */
+.explore{
+  background-color: #00372d;
+}
+.explore-box{
+  display: flex;
+  justify-content: center;
+  padding:150px 100px 100px 100px;
+}
+.explore-box h3{
+  text-transform: uppercase;
+  letter-spacing:5px;
+  font-weight: 700;
+  line-height: 160%;
+  margin:10px 8% 10px 10px;
+}
+.explore-person{
+  display:flex;
+  text-align: center;
+}
+.explore-face{
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color:rgba(255, 255, 255, 0);
+}
+.explore-face img{
+  height: 180%;
+  width: 180%;
+  object-fit: cover;
+  object-position:-40px -30px;
+}
+.explore-infor{
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.explore-infor p{
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size:0.7rem;
+  color: #999;
+  letter-spacing: 3px;
+}
+.description{
+  margin-top: 30px;
+  color: #bbb;
+  line-height:200%;
+  width: 90%;
+  padding-bottom: 80px;
+}
+.carousel{
+  position: relative;
+}
+.nextandprev{
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  width:15%;
+}
+.carousel-control{
+  position: absolute;
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  border: solid 1px #999;
+  font-size: 1.2rem;
+}
+.carousel-control-prev{
+  right: 100px;
+}
+.carousel-indicators{
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+.carousel-indicators li{
+  width: 6px;
+  height: 6px;
+  border-radius:50%;
+}
