@@ -260,132 +260,179 @@ section {
   height: 80px;
 }
 /* team */
-.team{
+.team {
   padding: 120px 0px 0px 7%;
-
 }
-.team-box{
-  display:flex;
+.team-box {
+  display: flex;
 }
-.team-box h3{
-  margin-top:40px;
+.team-box h3 {
+  margin-top: 40px;
   text-transform: uppercase;
-  font-weight:600;
-  letter-spacing:3px;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
-.team-persons{
+.team-persons {
   display: flex;
   flex-wrap: wrap;
 }
-.team-item{
+.team-item {
   margin: 20px;
   text-align: center;
 }
-.team-face{
-  height:185px;
-  width:185px;
-  border-radius:50%;
+.team-face {
+  height: 185px;
+  width: 185px;
+  border-radius: 50%;
   overflow: hidden;
-  background-color:violet;
-  margin:auto;
+  background-color: violet;
+  margin: auto;
 }
-.team-face img{
+.team-face img {
   height: 100%;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
-.team-infor{
+.team-infor {
   text-align: center;
 }
-.team-infor h5{
+.team-infor h5 {
   margin: 30px 0px 15px 0px;
 }
-.team-infor p{
+.team-infor p {
   text-transform: uppercase;
   color: #999;
-  letter-spacing:3px;
+  letter-spacing: 3px;
   font-size: 0.7rem;
   margin-bottom: 30px;
 }
 /* explore */
-.explore{
+.explore {
   background-color: #00372d;
 }
-.explore-box{
+.explore-box {
   display: flex;
   justify-content: center;
-  padding:150px 100px 100px 100px;
+  padding: 150px 100px 100px 100px;
 }
-.explore-box h3{
+.explore-box h3 {
   text-transform: uppercase;
-  letter-spacing:5px;
+  letter-spacing: 5px;
   font-weight: 700;
   line-height: 160%;
-  margin:10px 8% 10px 10px;
+  margin: 10px 8% 10px 10px;
 }
-.explore-person{
-  display:flex;
+.explore-person {
+  display: flex;
   text-align: center;
 }
-.explore-face{
-  height:100px;
-  width:100px;
+.explore-face {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   overflow: hidden;
-  background-color:rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
-.explore-face img{
+.explore-face img {
   height: 180%;
   width: 180%;
   object-fit: cover;
-  object-position:-40px -30px;
+  object-position: -40px -30px;
 }
-.explore-infor{
+.explore-infor {
   margin-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.explore-infor p{
+.explore-infor p {
   margin-bottom: 0px;
   text-transform: uppercase;
-  font-size:0.7rem;
+  font-size: 0.7rem;
   color: #999;
   letter-spacing: 3px;
 }
-.description{
+.description {
   margin-top: 30px;
   color: #bbb;
-  line-height:200%;
+  line-height: 200%;
   width: 90%;
   padding-bottom: 80px;
 }
-.carousel{
+.carousel {
   position: relative;
 }
-.nextandprev{
+.nextandprev {
   position: absolute;
   top: 20px;
   right: 10%;
-  width:15%;
+  width: 15%;
 }
-.carousel-control{
+.carousel-control {
   position: absolute;
-  height:50px;
-  width:50px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: solid 1px #999;
   font-size: 1.2rem;
 }
-.carousel-control-prev{
+.carousel-control-prev {
   right: 100px;
 }
-.carousel-indicators{
+.carousel-indicators {
   justify-content: flex-start;
   margin-left: 0px;
 }
-.carousel-indicators li{
+.carousel-indicators li {
   width: 6px;
   height: 6px;
-  border-radius:50%;
+  border-radius: 50%;
+}
+/* news */
+.news-box {
+  padding: 100px 0px 0px 100px;
+  position: relative;
+}
+.news-box h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.control {
+  position: absolute;
+  top: 100px;
+  right: 15%;
+  display: flex;
+  width: 200px;
+  text-align: center;
+}
+.control div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  border: solid 1px #666;
+  transition: transform 0.5s;
+}
+#news-prev:hover {
+  transform: translateX(-10px);
+}
+#news-next:hover {
+  transform: translateX(10px);
+}
+.slick-slide {
+  padding-top: 50px;
+}
+.news-image {
+  height: 250px;
+  width: 390px;
+  overflow: hidden;
+}
+.news-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
