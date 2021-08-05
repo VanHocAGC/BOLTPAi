@@ -15,8 +15,12 @@ a {
   text-decoration: none;
   color: #f0f0f0;
 }
+i {
+  margin: auto !important;
+}
 a:hover {
   color: #fff;
+  text-decoration: none;
 }
 section {
   background-color: #060606;
@@ -390,7 +394,7 @@ section {
 }
 /* news */
 .news-box {
-  padding: 100px 0px 0px 100px;
+  padding: 100px 0px 100px 100px;
   position: relative;
 }
 .news-box h3 {
@@ -435,4 +439,91 @@ section {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.news-inf {
+  width: 90%;
+  margin-top: 30px;
+}
+.news-inf h5 {
+  width: 100%;
+  line-height: 150%;
+  margin: 10px 0px;
+}
+.view-more {
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.view-more p,
+i {
+  margin: auto 10px auto 0px;
+  color: #999;
+}
+.view-more p {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+}
+/* footer */
+.footer {
+  background-color: #161616;
+}
+.footer-box {
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+.footer-box div h2 {
+  margin-bottom: 30px;
+}
+.footer-first h3 {
+  font-weight: 300;
+  line-height: 150%;
+}
+.contact-button {
+  margin-top: 40px;
+  display: flex;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+}
+.contact-button div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+}
+.contact-button div i {
+  font-size: 1.2rem;
+}
+.contact-button p {
+  margin: auto 20px auto 0px;
+}
+.footer-second {
+  color: #999;
+}
+.footer-second h2 {
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.footer-second div a {
+  margin: 20px 80px 20px 0px;
+  color: #bbb;
+  padding-bottom: 2px;
+  border-bottom: solid 1px #bbb;
+}
+.footer-second p {
+  padding-top: 30px;
+}
+.icon {
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
+.icon i {
+  padding-right: 30px;
+}
+.author {
+  margin-left: 100px;
+  color: #999;
+  font-size: 0.7rem;
 }
