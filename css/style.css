@@ -8,8 +8,22 @@ body {
   background-color: #161616;
   color: #f6f6f6;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: Roboto, Poppins;
+}
 li {
   list-style-type: none;
+}
+button,
+a,
+i {
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -48,6 +62,7 @@ section {
 .navbar-brand {
   font-weight: 800;
   font-size: 1.8rem;
+  margin: 0px 20px;
 }
 .last a {
   background-color: #f6f6f6;
@@ -77,6 +92,7 @@ section {
   z-index: 999;
   height: auto;
   width: 44%;
+  max-width: 570px;
   top: 25%;
   left: 10%;
   background-color: rgba(255, 255, 255, 0);
@@ -103,6 +119,12 @@ section {
   color: #000;
   border-radius: 25px;
   font-weight: 700;
+  outline: none;
+  transition: transform 0.5s;
+}
+.intro-content button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s;
 }
 .intro-image {
   position: absolute;
@@ -112,7 +134,6 @@ section {
   top: 30px;
 }
 .frame {
-  width: 90%;
   overflow: hidden;
   height: 500px;
   margin: 5%;
@@ -226,6 +247,11 @@ section {
   height: 40px;
   width: 40px;
   align-items: center;
+  transition: transform 0.5s;
+}
+.tech-button div:hover {
+  transform: translateX(5px);
+  transition: transform 0.5s;
 }
 .tech-button i {
   color: #aaa;
@@ -316,10 +342,11 @@ section {
 }
 .explore-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 150px 100px 100px 100px;
 }
 .explore-box h3 {
+  max-width: 500px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 700;
@@ -369,8 +396,10 @@ section {
 .nextandprev {
   position: absolute;
   top: 20px;
-  right: 10%;
-  width: 15%;
+  right: 100px;
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
 }
 .carousel-control {
   position: absolute;
@@ -379,9 +408,15 @@ section {
   border-radius: 50%;
   border: solid 1px #999;
   font-size: 1.2rem;
+  transition: transform 0.5s;
 }
-.carousel-control-prev {
-  right: 100px;
+.carousel-control-next:hover {
+  transform: translateX(10px);
+  transition: transform 0.5s;
+}
+.carousel-control-prev:hover {
+  transform: translateX(-10px);
+  transition: transform 0.5s;
 }
 .carousel-indicators {
   justify-content: flex-start;
@@ -405,10 +440,11 @@ section {
 .control {
   position: absolute;
   top: 100px;
-  right: 15%;
+  right: 200px;
   display: flex;
   width: 200px;
   text-align: center;
+  justify-content: flex-end;
 }
 .control div {
   height: 50px;
@@ -417,7 +453,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 10px;
   border: solid 1px #666;
   transition: transform 0.5s;
 }
@@ -453,13 +488,14 @@ section {
   display: flex;
   text-transform: uppercase;
   margin-top: 30px;
+  width: 30%;
 }
-.view-more p,
-i {
-  margin: auto 10px auto 0px;
+.view-more i {
   color: #999;
 }
 .view-more p {
+  margin-bottom: auto;
+  color: #999;
   font-size: 0.7rem;
   letter-spacing: 3px;
 }
@@ -492,9 +528,14 @@ i {
   border: 1px solid #999;
   display: flex;
   justify-content: center;
+  transition: transform 0.5s;
 }
 .contact-button div i {
   font-size: 1.2rem;
+}
+.contact-button div:hover {
+  transform: translateX(10px);
+  transition: transform 0.5s;
 }
 .contact-button p {
   margin: auto 20px auto 0px;
