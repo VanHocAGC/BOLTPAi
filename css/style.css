@@ -56,6 +56,11 @@ section {
   padding: 10px 15px;
   transition: 0.5s;
 }
+.nav-item .active {
+  transform: translateY(-5px) scale(1.2);
+  transition: 0.5s;
+  text-shadow: 3px 3px 4px #9b9b9b;
+}
 .navbar-nav {
   margin: 0px 5%;
 }
@@ -91,7 +96,7 @@ section {
   position: absolute;
   z-index: 999;
   height: auto;
-  width: 44%;
+  padding-right: auto;
   max-width: 570px;
   top: 25%;
   left: 10%;
@@ -148,12 +153,12 @@ section {
   z-index: 2;
   width: 75%;
   bottom: -570px;
+  min-width: 850px;
 }
 .about-box {
   height: auto;
   width: 100%;
   background-color: #00372d;
-  height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -169,6 +174,7 @@ section {
 .about-item {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 .about-item p {
   line-height: 30px;
@@ -206,6 +212,7 @@ section {
 }
 .tech-image {
   height: 450px;
+  min-width: 450px;
   overflow: hidden;
 }
 .tech-image img {
@@ -219,6 +226,7 @@ section {
   flex-direction: column;
   justify-content: center;
   margin: 0px 15px;
+  max-width: 550px;
 }
 .tech-content h3 {
   font-weight: 500;
@@ -278,11 +286,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
-  margin-left: 80px;
+  margin-left: 5%;
 }
 .partner-content div {
   height: auto;
-  margin: 40px;
+  margin: 4%;
 }
 .partner-content div img {
   width: 100%;
@@ -305,10 +313,12 @@ section {
 .team-persons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .team-item {
-  margin: 20px;
+  margin: 20px 5%;
   text-align: center;
+  width: 185px;
 }
 .team-face {
   height: 185px;
@@ -567,4 +577,18 @@ section {
   margin-left: 100px;
   color: #999;
   font-size: 0.7rem;
+}
+/* respond */
+@media screen and (max-width: 1180px) {
+  .team-box {
+    flex-wrap: wrap;
+  }
+  .team-box h3 {
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .team {
+    padding-left: 0px;
+  }
 }

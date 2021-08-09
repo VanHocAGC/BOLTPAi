@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarId" data-offset="200" >
     <!-- header -->
     <div class="navbar-box">
-            <nav class="navbar navbar-expand-sm  header">
+            <nav class="navbar navbar-expand-sm  header" id="navbarId">
                 <a class="navbar-brand" href="#">BOLTPZ.AI</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,22 +26,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item ">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Technology</a>
+                    <a class="nav-link" href="#technology">Technology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Partners</a>
+                        <a class="nav-link" href="#partner">Partners</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#team">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#explore">Blog</a>
                     </li>
                     <li class="nav-item last">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#footer">Contact Us</a>
                     </li>
                 </ul>
                 </div>
@@ -65,7 +65,7 @@
         </div>
     </section>
     <!-- about us -->
-    <section class="about" style="background-color:rgba(255,255, 255,0);">
+    <section class="about" style="background-color:rgba(255,255, 255,0);" id="about">
         <div class="about-box" data-aos="fade-right" data-aos-duration="650" data-aos-easing="linear">
             <div class="about-content">
                 <h3>ABOUT US</h3>
@@ -87,7 +87,7 @@
         </div>
     </section>
     <!-- technology -->
-    <section class="technology">
+    <section class="technology" id="technology">
         <div class="technology-box">
             <div class="tech-title">
                 <p>our technology</p>
@@ -108,8 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tech-item" style="margin-top:-30px" data-aos="fade-left" data-aos-duration="650" data-aos-easing="linear">
-                    <div class="col-sm-2"></div>
+                <div class="tech-item" style="margin-top:-30px; justify-content:flex-end;" data-aos="fade-left" data-aos-duration="650" data-aos-easing="linear">
                     <div class="tech-content col-sm-5" >
                         <h3>Analysis of each field block, all in real-time.</h3>
                         <p>Reduce fertilizer, pesticide, and water waste due to ever-changing conditions on the field.</p>
@@ -143,7 +142,7 @@
         </div>
     </section>
     <!-- partner -->
-    <section class="partner">
+    <section class="partner" id="partner">
         <div class="partner-box">
             <h2>our partner</h2>
             <div class="partner-content">
@@ -188,11 +187,11 @@
         </div>
     </section>
     <!-- our team -->
-    <section class="team">
+    <section class="team" id="team">
         <div class="team-box">
             <h3 class="col-sm-3">our team</h3>
             <div class="team-persons" >
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team1.jfif" alt="1">
                     </div>
@@ -201,7 +200,7 @@
                         <p>Founder,CEO</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team2.jfif" alt="2">
                     </div>
@@ -210,7 +209,7 @@
                         <p>Head of Science</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team3.jfif" alt="3">
                     </div>
@@ -219,7 +218,7 @@
                         <p>Head of Operations</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team4.jfif" alt="4">
                     </div>
@@ -228,7 +227,7 @@
                         <p>Accountant</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team5.jfif" alt="5">
                     </div>
@@ -237,7 +236,7 @@
                         <p>head of accountant</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team6.jfif" alt="6">
                     </div>
@@ -246,7 +245,7 @@
                         <p>frontend dev</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img style="object-position: top; transform: rotate(15deg);" src="./img/team7.jfif" alt="7">
                     </div>
@@ -255,7 +254,7 @@
                         <p>Quantum Application Scientist</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team8.jfif" alt="8">
                     </div>
@@ -264,7 +263,7 @@
                         <p>Quantum Data Scientist</p>
                     </div>
                 </div>
-                <div class="team-item col-sm-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="team-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="team-face">
                         <img src="./img/team9.jfif" alt="9">
                     </div>
@@ -277,7 +276,7 @@
         </div>
     </section>
     <!-- explore -->
-    <section class="explore">
+    <section class="explore" id="explore">
         <div class="explore-box">
             <h3 class="col-sm-4">Explore how customers thinking about BOLTZ</h3>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="300000">
@@ -384,7 +383,7 @@
         </div>
     </section>
     <!-- news -->
-    <section class="news">
+    <section class="news" id="explore">
         <div class="news-box">
             <h3>lastest news</h3>
             <div class="control">
@@ -447,11 +446,11 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="footer-box">
             <div class="footer-first col-sm-4">
                 <h2>BOLTPZ.AI</h2>
-                <h3>Starting a new project or
+                <h3 style="min-width: 350px;">Starting a new project or
                     want to collaborate with us?
                 </h3>
                 <div class="contact-button">
