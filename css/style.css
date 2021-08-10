@@ -82,6 +82,19 @@ section {
   transform: translateY(-5px);
   transition: transform 0.5s;
 }
+.navbar-toggler {
+  color: white;
+  outline: none;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
 /* intro */
 .intro {
   margin-top: 80px;
@@ -135,25 +148,28 @@ section {
   position: absolute;
   height: auto;
   width: 60%;
-  right: 5%;
+  right: 10%;
   top: 30px;
 }
 .frame {
   overflow: hidden;
-  height: 500px;
-  margin: 5%;
+  height: 540px;
+  margin: 5% 0px 5% auto;
+  width: 100%;
 }
 .frame img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 /* about */
 .about {
   position: absolute;
   z-index: 2;
   width: 75%;
-  bottom: -570px;
-  min-width: 850px;
+  top: 800px;
+  min-width: 767px;
 }
 .about-box {
   height: auto;
@@ -472,12 +488,22 @@ section {
 #news-next:hover {
   transform: translateX(10px);
 }
+#slick-slide {
+  display: flex !important;
+  flex-wrap: nowrap;
+  height: 450px;
+}
 .slick-slide {
   padding-top: 50px;
+  overflow: hidden;
+}
+.news-item {
+  min-width: 390px;
+  margin-right: 50px;
 }
 .news-image {
   height: 250px;
-  width: 390px;
+  min-width: 390px;
   overflow: hidden;
 }
 .news-image img {
@@ -590,5 +616,65 @@ section {
   }
   .team {
     padding-left: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .intro-box {
+    height: 60vh;
+  }
+  .middle {
+    margin-top: 10px !important;
+  }
+  .intro-content {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .intro-image {
+    right: 5%;
+  }
+  .about {
+    width: 100%;
+  }
+  .technology {
+    padding-top: 120px;
+  }
+  .middle {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .middle .tech-content {
+    order: 2;
+  }
+  .tech-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-image {
+    width: 100%;
+    height: auto;
+  }
+  .partner-box {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .partner-content {
+    margin: 0px;
+  }
+  .explore-box {
+    flex-direction: column;
+  }
+  .explore-box h3 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    max-width: none;
+  }
+  .footer-first h3 {
+    min-width: 250px !important;
   }
 }
