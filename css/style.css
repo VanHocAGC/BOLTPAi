@@ -4,6 +4,9 @@
   padding: 0;
   font-family: Roboto, Poppins;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #161616;
   color: #f6f6f6;
@@ -693,6 +696,21 @@ section {
   }
 }
 @media screen and (max-width: 415px) {
+  html{
+    overflow-x: hidden;
+  }
+  .intro-image{
+    width: 100%;
+    right:0px;
+  }
+  .intro-content{
+    top: 60%;
+    width: 95%;
+    left:0px;
+  }
+  .intro-title h1{
+    font-size:1.5rem;
+  }
   .about {
     min-width: 100px;
     width: 100%;
@@ -703,8 +721,11 @@ section {
   .p1 {
     margin: 0px !important;
   }
-  .p2 {
-    display: none;
+  .technology{
+    width: 100%;
+  }
+  .tech-item{
+    overflow: hidden;
   }
   .tech-title p {
     margin-top: 100px;
@@ -721,7 +742,60 @@ section {
     justify-content: center;
     margin-bottom: 50px;
   }
-  .tech-image {
-    padding: 0px;
+  .explore-box{
+    padding:20px 0px 20px 20px;
+  }
+  .nextandprev {
+    top: 20px;
+    right: 20px;
+  }
+  .news-box{
+    padding:20px 0px 20px 20px;
+  }
+  .control {
+    top: 10px;
+    right: 20px;
+  }
+  .news-item {
+    margin: 0px;
+    min-width:none;
+  }
+  .news-image {
+    min-width: none;
+    width:90%;
+  }
+  .disable{
+    display: none;
   }
 }
+@media screen and (max-width: 321px){
+  .tech-title p{
+    margin-top:300px;
+  }
+  .nextandprev {
+    top: 80px;
+  }
+  .control {
+    top: 60px;
+    z-index: 10;
+  }
+  .news-item {
+    min-width:100px;
+    width: 300px !important;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .news-image{
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .news-image img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+  }
+  
+  /* #slick-slide {
+    height: 350px;
+  } */
+} 
