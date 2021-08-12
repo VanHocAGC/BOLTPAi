@@ -59,10 +59,18 @@ section {
   padding: 10px 15px;
   transition: 0.5s;
 }
-.nav-item .active {
-  transform: translateY(-5px) scale(1.2);
+/* .nav-link{
   transition: 0.5s;
-  text-shadow: 3px 3px 4px #9b9b9b;
+} */
+.nav-item .active {
+  background-color: #f6f6f6;
+  color: #060606;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  padding-left: 10px;
+  font-weight: 300;
+  transition: background-color 1s;
 }
 .navbar-nav {
   margin: 0px 5%;
@@ -72,7 +80,7 @@ section {
   font-size: 1.8rem;
   margin: 0px 20px;
 }
-.last a {
+.navbar-nav li a:hover {
   background-color: #f6f6f6;
   color: #060606;
   border-radius: 20px;
@@ -80,10 +88,7 @@ section {
   text-align: center;
   padding-left: 10px;
   font-weight: 300;
-}
-.navbar-nav li:hover {
-  transform: translateY(-5px);
-  transition: transform 0.5s;
+  transition: background-color 1s;
 }
 .navbar-toggler {
   color: white;
@@ -657,7 +662,7 @@ section {
     width: 100%;
   }
   .technology {
-    padding-top: 120px;
+    padding-top: 150px;
   }
   .middle {
     flex-direction: column;
@@ -723,12 +728,16 @@ section {
   }
   .technology {
     width: 100%;
+    margin-top: 500px;
+    padding: 0px;
   }
   .tech-item {
     overflow: hidden;
   }
-  .tech-title p {
+  .tech-title {
     margin-top: 100px;
+  }
+  .tech-title p {
     font-size: 1.5rem;
     letter-spacing: 2px;
   }
@@ -772,8 +781,12 @@ section {
   .intro-content {
     top: 50%;
   }
+  .tech-title {
+    margin-top: 700px;
+    padding-top: 100px;
+  }
   .tech-title p {
-    margin-top: 300px;
+    padding: 0px;
   }
   .nextandprev {
     top: 80px;
@@ -797,8 +810,18 @@ section {
     width: 90%;
     object-fit: cover;
   }
-
-  /* #slick-slide {
-    height: 350px;
-  } */
+  #slick-slide {
+    height: 500px;
+  }
+  .view-more {
+    width: 50%;
+  }
+  .author {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-second div a {
+    margin-right: 5px;
+  }
 }
