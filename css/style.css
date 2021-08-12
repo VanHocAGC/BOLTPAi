@@ -59,9 +59,6 @@ section {
   padding: 10px 15px;
   transition: 0.5s;
 }
-/* .nav-link{
-  transition: 0.5s;
-} */
 .nav-item .active {
   background-color: #f6f6f6;
   color: #060606;
@@ -640,9 +637,13 @@ section {
     padding-left: 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .intro-box {
     height: 60vh;
+  }
+  .nav-item {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
   .middle {
     margin-top: 10px !important;
@@ -776,6 +777,9 @@ section {
   .disable {
     display: none;
   }
+  .footer-second div a {
+    margin-right: 5px;
+  }
 }
 @media screen and (max-width: 376px) {
   .intro-content {
@@ -820,8 +824,5 @@ section {
     margin: 0px;
     width: 100%;
     text-align: center;
-  }
-  .footer-second div a {
-    margin-right: 5px;
   }
 }
