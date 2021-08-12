@@ -579,6 +579,7 @@ section {
 .contact-button div {
   height: 50px;
   width: 50px;
+  min-width: 50px;
   border-radius: 50%;
   border: 1px solid #999;
   display: flex;
@@ -658,12 +659,14 @@ section {
   }
   .intro-image {
     right: 5%;
+    top: 0px;
   }
   .about {
     width: 100%;
   }
   .technology {
     padding-top: 150px;
+    margin-top: 250px;
   }
   .middle {
     flex-direction: column;
@@ -700,8 +703,18 @@ section {
   .footer-first h3 {
     min-width: 250px !important;
   }
+  .contact-button p {
+    margin-right: 2px;
+  }
+  .phone {
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    margin-top: 30px;
+  }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 426px) {
   html {
     overflow-x: hidden;
   }
@@ -783,7 +796,7 @@ section {
 }
 @media screen and (max-width: 376px) {
   .intro-content {
-    top: 50%;
+    top: 40%;
   }
   .tech-title {
     margin-top: 700px;
